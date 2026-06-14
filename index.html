@@ -5,276 +5,664 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Md Siam Hossain | Full-Stack & Data Science Engineer</title>
+  
+  <meta name="description" content="Production-first Full-Stack Software & Data Science Engineer specializing in AI deployment, scalable backends, and intelligent real-world systems." />
+  
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Md Siam Hossain</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Md Siam Hossain</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">
+        Md. Siam<span>Hossain</span>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/1.jpg" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Md Siam Hossain</h1>
-      <p class="section__text__p2">Data Science Engineer & AI Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/md-siam-hossain-9a8049240/'"/>
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/2.JPG" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>2+ years <br />Data Science & AI Engineer</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>B.Sc. in Computer Science & Engineering<br />Daffodil International University<br />CGPA: 3.63 / 4.00</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            I'm Siam, a Data Science Engineer and AI Developer with a strong passion for building intelligent,
-            real-world systems. I currently work at Datasoft Systems Bangladesh / DMA, where I develop MQTT-based
-            IoT data pipelines, advanced spike detection algorithms for water level monitoring across 318 BWDB stations,
-            and RAG-powered AI chatbots using LangChain, FastAPI, and ChromaDB. I am also a Student Associate at
-            Daffodil International University's Office of Students' Affairs, architecting the DIU Students Hub — a
-            multi-tenant SaaS platform. With 3 peer-reviewed publications, 2 international awards, and hands-on
-            experience across ML, NLP, full-stack web, and IoT, I am committed to building systems that create
-            meaningful impact. My personal philosophy: know the <em>what</em> before the <em>how</em>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Data Science & AI</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Machine Learning</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>RAG Chatbots</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>NLP / BanglaBERT</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Reinforcement Learning</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Data Engineering</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Spike Detection / Gap Filling</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Full-Stack & IoT</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Django / FastAPI</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React / React Native</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MQTT / IoT Pipelines</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MySQL / PostgreSQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Docker / Linux / Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Arduino / Raspberry Pi</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/5.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Smart Railway Crossing System</h2>
-          <p>Automated railway crossing control using embedded systems and sensor fusion. Published as a chapter in <em>Intelligent Networks and Systems</em>, Chapman and Hall/CRC, 2025.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/6.jpg" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Guardian On Board</h2>
-          <p>IoT-based child vehicle safety system achieving 99.6% message delivery rate. Published at IEEE QPAIN 2025 (doi: 10.1109/QPAIN66474.2025.11172262).</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/7.jpg" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Nova — RAG IoT Chatbot</h2>
-          <p>Production AI chatbot built with FastAPI, LangChain, ChromaDB, and Groq. Features a multi-turn troubleshooting state machine for IoT security support at Datasoft/DMA.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/8.jpg" alt="Project 4" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">BWDB Water Level Monitoring</h2>
-          <p>End-to-end MQTT→MySQL→Django pipeline monitoring 318 BWDB stations at 15-minute intervals, with tidal/non-tidal spike detection and automated gap-filling algorithms.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/9.jpg" alt="Project 5" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">AI-Driven Personalized Learning Path (FYDP)</h2>
-          <p>Final Year Design Project — LSTM-based Deep Knowledge Tracing on EdNet KT1 (80.3% accuracy, AUC-ROC 0.9510) combined with a DQN reinforcement learning agent and Streamlit dashboard.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/10.jpg" alt="Project 6" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Bangla Medical Ambiguity Detection</h2>
-          <p>NER model for detecting ambiguous medical terms in Bangla text using BanglaBERT fine-tuning. Achieved F1 score of 0.90. Peer-reviewed and accepted for publication.</p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:mdsiamhossain0812@gmail.com">mdsiamhossain0812@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/md-siam-hossain-9a8049240/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#scholarly">Research & Awards</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2024 Md Siam Hossain. All Rights Reserved.</p>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">
+        Md. Siam<span>Hossain</span>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#scholarly" onclick="toggleMenu()">Research & Awards</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="profile">
+    <div class="profile-info">
+      <p class="profile-greeting">Hello, I'm</p>
+      <h1 class="profile-name">Md Siam Hossain</h1>
+      <p class="profile-role">Full-Stack Software & Data Science Engineer</p>
+      <p class="profile-tagline">
+        Building production-first intelligent systems with mathematical rigor, robust backend architectures, and end-to-end scalable ML deployment.
+      </p>
+      <div class="profile-ctas">
+        <button class="btn btn-primary" onclick="window.open('./assets/Siam CV Professional.pdf')">
+          Download CV
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+          </svg>
+        </button>
+        <button class="btn btn-secondary" onclick="location.href='#contact'">
+          Get In Touch
+        </button>
+      </div>
+      <div class="socials-container">
+        <a class="social-icon-link" href="https://www.linkedin.com/in/mdsiamhossain0812" target="_blank" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="profile-image-container">
+      <div class="profile-image-glow"></div>
+      <div class="profile-image-wrapper">
+        <img src="./assets/1.jpg" alt="Md Siam Hossain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">Get To Know More</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo-wrapper">
+        <img src="./assets/2.JPG" alt="Md Siam Hossain Profile" />
+      </div>
+      <div class="about-content">
+        <div class="about-cards-grid">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+              </svg>
+            </div>
+            <h3>Current Roles</h3>
+            <p><strong>Data Science Engineer</strong><br>Datasoft Manufacturing & Assembly Inc Ltd (DMA)</p>
+            <p style="margin-top: 0.5rem;"><strong>Student Associate</strong><br>DIU Students' Affairs (DSA)</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13c-3.72 0-7.07-1.54-9.5-4L12 18l9.5-6c-2.43 2.46-5.78 4-9.5 4z"/>
+              </svg>
+            </div>
+            <h3>Education</h3>
+            <p><strong>B.Sc. in Computer Science & Eng.</strong><br>Daffodil International University</p>
+            <span class="badge score">CGPA: 3.54 / 4.00</span>
+          </div>
+        </div>
+        <p class="about-bio">
+          I am a production-first Full-Stack Software Engineer and Data Science Engineer with deep expertise across backend architectures, full-cycle AI deployment, and enterprise software engineering. Grounded in peer-reviewed research, my development philosophy values robust maintainability, scalable API systems, and mathematical rigor. Whether building hydrological anomaly detection systems for national agencies or architecting campus infrastructure serving over 30,000 active users, I design code that runs efficiently under high load.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION (SEPARATE ALL BLOCKS SHOWN AT ONCE) -->
+  <section id="skills">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">Declaring My Technical Range</p>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- AI & ML CARD -->
+      <div class="skill-category-card">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.67-9.83 0-2.68 2.67-2.68 7.02 0 9.7l9.83-9.7 2.74 2.82h-6.78z"/></svg>
+          AI, ML & NLP Engineering
+        </h3>
+        <div class="skill-items-list">
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Model Frameworks & Math</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">LSTM Networks</span>
+                <span class="tech-tag">DQN (Deep Q-Networks)</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>AI Agents & RAG Pipelines</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">FAISS</span>
+                <span class="tech-tag">Groq Orchestration</span>
+                <span class="tech-tag">HuggingFace Embeddings</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>NLP & Text Reasoning</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">BanglaBERT</span>
+                <span class="tech-tag">XLM-RoBERTa</span>
+                <span class="tech-tag">NER (Entity Extraction)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- SOFTWARE & MOBILE CARD -->
+      <div class="skill-category-card">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+          Full-Stack & Mobile Development
+        </h3>
+        <div class="skill-items-list">
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Backend Architectures</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">Django REST</span>
+                <span class="tech-tag">Laravel Framework</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">REST API Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Web & Mobile UI</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Flutter Framework</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DATA & DEVOP CARD -->
+      <div class="skill-category-card">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          Data Science & Systems
+        </h3>
+        <div class="skill-items-list">
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Databases & Streams</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">MQTT IoT Streams</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Analytics & Interpolation</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Cubic Spline</span>
+                <span class="tech-tag">Matplotlib / Seaborn</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item-row">
+            <div class="skill-checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div class="skill-item-info">
+              <h4>Infrastructure & IoT</h4>
+              <div class="skill-tag-group">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Linux Server</span>
+                <span class="tech-tag">Nginx / Gunicorn</span>
+                <span class="tech-tag">Arduino / Raspberry Pi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE SECTION -->
+  <section id="experience">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">My Professional Journey</p>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    
+    <div class="timeline">
+      <!-- Datasoft DMA -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="timeline-date">Jul 2024 - Present</div>
+          <h3 class="timeline-role">Data Science Engineer</h3>
+          <div class="timeline-company">Datasoft Manufacturing and Assembly Inc Limited (DMA)</div>
+          <ul class="timeline-details">
+            <li>Engineered phase-aware dynamic range detection algorithms for 315 hydrological monitoring stations (97% detection accuracy, 93% reliability).</li>
+            <li>Architected System Orchestration Dashboard (SOD) consolidating 8 data engineering workflows (React, Django REST) reduction of 70% operational complexity.</li>
+            <li>Built corporate RAG onboarding agent (LangChain, FAISS, Groq), reducing internal office support queries from hours to instant seconds.</li>
+            <li>Designing diagnostic fault-detection reasoning systems checking live server states to pinpoint hardware/firmware failures.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Students' Affairs DIU -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="timeline-date">Nov 2025 - Present</div>
+          <h3 class="timeline-role">Student Associate</h3>
+          <div class="timeline-company">Office of the Director of Students' Affairs, DIU</div>
+          <ul class="timeline-details">
+            <li>Developed core modules for Students Hub Platform (Laravel) serving 30,000+ active university users.</li>
+            <li>Engineered dynamic CV generator with multi-template rendering and integrated Event Management systems.</li>
+            <li>Designed and integrated Club Recommendation Agent and Psychology appointment scheduling AI chatbot.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- BRRI Agromet Lab -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="timeline-date">Nov 2025 - Apr 2026</div>
+          <h3 class="timeline-role">Intern Software Developer</h3>
+          <div class="timeline-company">BRRI Agromet Lab, Bangladesh Rice Research Institute</div>
+          <ul class="timeline-details">
+            <li>Architected Agromet Lab Task Tracker from scratch (Django, React, MySQL, REST API) supporting 20+ active scientific contributors.</li>
+            <li>Implemented a weighted multi-KPI performance leaderboard tracking timeliness, quality, efficiency, and reliability with dynamic dashboards.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- IoT Lab DIU Associate -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2024 - Jan 2025</div>
+          <h3 class="timeline-role">Student Associate (IoT Lab)</h3>
+          <div class="timeline-company">DIU IoT Research Lab</div>
+          <ul class="timeline-details">
+            <li>Co-designed Guardian on Board transport safety NFC tracking POS network (99.6% message success rate, optimized battery).</li>
+            <li>Built frontends and automated field server pipelines for AWD Smart Irrigation automation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (WITH SCREENSHOT PLACEHOLDERS) -->
+  <section id="projects">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">Browse My Production Artifacts</p>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    
+    <div class="project-filters">
+      <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+      <button class="filter-btn" onclick="filterProjects('ai-ml')">AI & Data Science</button>
+      <button class="filter-btn" onclick="filterProjects('full-stack')">Full-Stack</button>
+      <button class="filter-btn" onclick="filterProjects('iot')">IoT & Hardware</button>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- BWDB Water Level -->
+      <div class="project-card" data-category="ai-ml">
+        <div class="project-img-wrapper">
+          <img src="./assets/spike-detection.png" alt="BWDB Water Level Anomaly Engine Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag primary">AI & Data Science</span>
+            <span class="project-timeline-label">DMA / BWDB</span>
+          </div>
+          <h3 class="project-title">BWDB Water Level Anomaly Engine</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">97%</span> Anomaly Detection Accuracy
+            </div>
+            <div class="project-metric">
+              <span class="metric-val">315</span> Station Channels Managed
+            </div>
+          </div>
+          <p class="project-desc">Engineered algorithmic phase-aware range tracking for national hydrographic stations to filter real-time anomalies. Utilized Cubic Spline and Linear interpolation for data gap restorations.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">Django REST</span>
+            <span class="project-tech-tag">React</span>
+            <span class="project-tech-tag">Cubic Spline</span>
+            <span class="project-tech-tag">MQTT</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AI Personalized learning -->
+      <div class="project-card" data-category="ai-ml">
+        <div class="project-img-wrapper">
+          <img src="./assets/learning-path-generator.png" alt="AI Personalized Learning Path Gen Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag primary">AI & Data Science</span>
+            <span class="project-timeline-label">Thesis Project</span>
+          </div>
+          <h3 class="project-title">AI Personalized Learning Path Gen</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">80.3%</span> Knowledge Tracing Accuracy
+            </div>
+            <div class="project-metric">
+              <span class="metric-val">0.9510</span> AUC-ROC Model Performance
+            </div>
+          </div>
+          <p class="project-desc">Built Deep Knowledge Tracing models with LSTM networks over 829,000+ interactions. Deployed DQN Reinforcement Learning agent for skill-based recommendations.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">LSTM</span>
+            <span class="project-tech-tag">DQN</span>
+            <span class="project-tech-tag">TensorFlow</span>
+            <span class="project-tech-tag">EdNet</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agromet Task Tracker -->
+      <div class="project-card" data-category="full-stack">
+        <div class="project-img-wrapper">
+          <img src="./assets/task-tracker.png" alt="Agromet Lab Task Tracker Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag primary">Full-Stack</span>
+            <span class="project-timeline-label">BRRI Agromet</span>
+          </div>
+          <h3 class="project-title">Agromet Lab Task Tracker</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">4-KPI</span> Rating Engine Integrated
+            </div>
+          </div>
+          <p class="project-desc">Architected custom scheduling environment, featuring a composite KPI leaderboard to evaluate and rank academic contributors based on timeliness, quality, efficiency, and reliability.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">Django</span>
+            <span class="project-tech-tag">React</span>
+            <span class="project-tech-tag">MySQL</span>
+            <span class="project-tech-tag">Radar Charts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIU Students Hub Platform -->
+      <div class="project-card" data-category="full-stack">
+        <div class="project-img-wrapper">
+          <img src="./assets/students-hub.png" alt="DIU Students Hub Platform Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag primary">Full-Stack</span>
+            <span class="project-timeline-label">DIU Student Affairs</span>
+          </div>
+          <h3 class="project-title">DIU Students Hub Platform</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">30,000+</span> Active Student Users
+            </div>
+            <div class="project-metric">
+              <span class="metric-val">3</span> CV Export Templates
+            </div>
+          </div>
+          <p class="project-desc">Contributed to full-stack Laravel development, engineering a centralized hub, a dynamic Portfolio & CV Generator, an Event Management system, and AI-driven Club & Psychology agents.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">Laravel</span>
+            <span class="project-tech-tag">Full-Stack Web</span>
+            <span class="project-tech-tag">Conversational AI</span>
+            <span class="project-tech-tag">Survey Engine</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Guardian on board -->
+      <div class="project-card" data-category="iot">
+        <div class="project-img-wrapper">
+          <img src="./assets/guardian-on-board.jpg" alt="Guardian on Board Transit Tracker Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag pub">IEEE Publication</span>
+            <span class="project-timeline-label">DIU IoT Lab</span>
+          </div>
+          <h3 class="project-title">Guardian on Board Transit Tracker</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">99.6%</span> Message Delivery Rate
+            </div>
+          </div>
+          <p class="project-desc">Co-designed NFC transport monitoring system sending real-time route alerts. Optimized POS firmware parameters to significantly decrease daily power draw.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">NFC Hardware</span>
+            <span class="project-tech-tag">GPS</span>
+            <span class="project-tech-tag">MQTT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Railway crossing -->
+      <div class="project-card" data-category="iot">
+        <div class="project-img-wrapper">
+          <img src="./assets/railway-crossing.jpg" alt="Smart Railway Crossing System Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag pub">CRC Press Chapter</span>
+            <span class="project-timeline-label">DIU IoT Lab</span>
+          </div>
+          <h3 class="project-title">Smart Railway Crossing System</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">1st</span> Runner-up | BIM-2023
+            </div>
+          </div>
+          <p class="project-desc">Built automated railway track barriers using sensor-fusion automation. Programmed localized sensor-failure fallbacks and remote override dashboards.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">Sensor Fusion</span>
+            <span class="project-tech-tag">Embedded C</span>
+            <span class="project-tech-tag">Fault Diagnostics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MediAI -->
+      <div class="project-card" data-category="ai-ml">
+        <div class="project-img-wrapper">
+          <img src="./assets/mediai-predictor.png" alt="MediAI: Symptom Disease Predictor Screenshot" />
+        </div>
+        <div class="project-info-body">
+          <div class="project-top-row">
+            <span class="badge-tag primary">AI & Data Science</span>
+            <span class="project-timeline-label">Individual Project</span>
+          </div>
+          <h3 class="project-title">MediAI: Symptom Disease Predictor</h3>
+          <div class="project-metrics-container">
+            <div class="project-metric">
+              <span class="metric-val">97%</span> Prediction Accuracy
+            </div>
+          </div>
+          <p class="project-desc">Built an Artificial Neural Network tool integrated into a Django web application for automated symptom-based disease predictions.</p>
+          <div class="project-tech-tags">
+            <span class="project-tech-tag">TensorFlow</span>
+            <span class="project-tech-tag">Keras</span>
+            <span class="project-tech-tag">Django</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & AWARDS SECTION -->
+  <section id="scholarly">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">Academic & Competitive Achievements</p>
+      <h2 class="section-title">Research & Awards</h2>
+    </div>
+    <div class="scholarly-grid">
+      <!-- Publications Column -->
+      <div class="scholarly-column">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+          Peer-Reviewed Publications
+        </h3>
+        <div class="scholarly-list">
+          <div class="scholarly-item">
+            <div class="scholarly-meta">
+              <span class="scholarly-type">IEEE Conference Proceeding</span>
+              <span class="scholarly-date">2025</span>
+            </div>
+            <h4 class="scholarly-name">Guardian on Board (GoB): IoT-Powered Student Transport Management System</h4>
+            <p class="scholarly-desc">Published at IEEE QPAIN 2025. Proposes real-time NFC-based transport systems and optimized power efficiency strategies for POS hardware.</p>
+            <a href="https://doi.org/10.1109/QPAIN66474.2025.11172262" target="_blank" class="scholarly-link">
+              View Paper (DOI: 10.1109/QPAIN66474.2025.11172262)
+            </a>
+          </div>
+          <div class="scholarly-item">
+            <div class="scholarly-meta">
+              <span class="scholarly-type">CRC Press Book Chapter</span>
+              <span class="scholarly-date">2023</span>
+            </div>
+            <h4 class="scholarly-name">Smart Railway Crossing System (SRCS) Using IoT Philosophy: Bangladesh Context</h4>
+            <p class="scholarly-desc">Published in Intelligent Networks and Systems (Chapman and Hall/CRC). Presents failsafe automated railway grids using local sensor nodes.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Awards & Trainings Column -->
+      <div class="scholarly-column">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 12 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          Honors & Leadership
+        </h3>
+        <div class="scholarly-list">
+          <div class="scholarly-item">
+            <div class="scholarly-meta">
+              <span class="scholarly-type">Robotics Competition</span>
+              <span class="scholarly-date">2024</span>
+            </div>
+            <h4 class="scholarly-name">1st Runner-up | 4th International Robotech Olympiad</h4>
+            <p class="scholarly-desc">Awarded for Individual Water Billing System (IWBS) monitoring unit water depletion patterns and mobile app billing integration.</p>
+          </div>
+          <div class="scholarly-item">
+            <div class="scholarly-meta">
+              <span class="scholarly-type">Project Showcase</span>
+              <span class="scholarly-date">2023</span>
+            </div>
+            <h4 class="scholarly-name">1st Runner-up | BIM-2023 Showcase</h4>
+            <p class="scholarly-desc">Awarded for the Smart Railway Crossing System prototype demonstrating robust sensor fault diagnostics.</p>
+          </div>
+          <div class="scholarly-item">
+            <div class="scholarly-meta">
+              <span class="scholarly-type">Instructor Experience</span>
+              <span class="scholarly-date">2024 & 2025</span>
+            </div>
+            <h4 class="scholarly-name">Industrial IoT Trainer | DIU IoT Lab</h4>
+            <p class="scholarly-desc">Led technical classes on data acquisition, network/security setups, big data integration, and system infrastructure scalability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="section-title-wrapper">
+      <p class="section-subtitle">Let's Collaborate</p>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    
+    <div class="contact-card">
+      <h2>Let's build something significant</h2>
+      <p>I am always open to exploring complex technical architectures, advanced AI engineering challenges, or full-stack software initiatives.</p>
+      <div class="contact-methods">
+        <a href="mailto:mdsiamhossain0812@gmail.com" class="contact-method-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          mdsiamhossain0812@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/mdsiamhossain0812" target="_blank" class="contact-method-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        Md. Siam<span>Hossain</span>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#scholarly">Research</a></li>
+      </ul>
+      <p class="footer-copyright">Copyright &copy; 2026 Md Siam Hossain. All Rights Reserved.</p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 
